@@ -30,11 +30,7 @@ namespace Day35LinqOperation
                 new ProductReview() {ProductId =16, UserId=10, Rating=3, Review= "Nice", isLike=true}
             };
 
-            //foreach(var list in productReviews)
-            //{
-            //    Console.WriteLine("Product Id:"+list.ProductId + "UserId: "+list.UserId + "Rating:" +list.Rating + "Review:" +list.Review +"Like: "+list.isLike);
-
-            //}
+           
 
             Managment management = new Managment();
             management.TopRecordList(productReviews);
