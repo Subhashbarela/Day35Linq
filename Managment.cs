@@ -21,14 +21,15 @@ namespace Day35LinqOperation
             }
         }
 
-        public void SelectedRowRecordList(List<ProductReview> review)
+        public void RetriveRecordUsingEquals(List<ProductReview> review)
         {
             var recordData = (from productReviews in review
+                              where productReviews.isLike == true
                               select  productReviews);
 
             foreach (var list in recordData)
             {
-                Console.WriteLine("Product Id: " + list.ProductId +" Review: " + list.Review );
+                Console.WriteLine("Product Id: " + list.ProductId + " | UserId: " + list.UserId + " | Rating: " + list.Rating + " | Review: " + list.Review + " | Like: " + list.isLike);
 
             }
         }

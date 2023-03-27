@@ -34,7 +34,9 @@ namespace Day35LinqOperation
 
             Managment management = new Managment();
           
-           management.SelectedRowRecordList(productReviews);
+         //  management.SelectedRowRecordList(productReviews);
+            management.RetriveRecordUsingEquals(productReviews);
+
 
 
 
