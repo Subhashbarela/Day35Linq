@@ -34,8 +34,7 @@ namespace Day35LinqOperation
 
             Managment management = new Managment();
           
-           // management.SelectedRowRecordList(productReviews);
-             management.SkipTopRecordList(productReviews);
+           management.SelectedRowRecordList(productReviews);
 
 
 
